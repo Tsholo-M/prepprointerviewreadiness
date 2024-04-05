@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Signup page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1{
+                text-align: center;
+            }
+            html{
+                background-color: #009999;
+            }
+             table{
+                 margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sign up</h1>
+        <form action ="SignupServlet.do" method="POST">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" required=""></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name ="password" required=""></td>
+                   </tr>
+                   <tr>
+                       <td>Re-enter password:</td>
+                       <td><input type="password" name ="re-enterPassword" required=""></td>
+                   </tr>
+                   <tr>
+                       <td></td><!-- comment -->
+                       <td><input type="submit" value="Sign Up"></td>
+                   </tr>
+            </table> 
+        </form>
+    </body>
+</html>

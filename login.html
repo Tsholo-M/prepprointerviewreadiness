@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html{
+                background-color:#009999;
+               
+            }
+            table{
+                 margin-left: auto;
+                margin-right: auto;
+            }
+            h1{
+                text-align: center;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form action="LoginServlet.do" method="POST">
+         
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" required=""></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name ="password" required=""></td>
+                   </tr>
+                   <tr>
+                       <td></td><!-- comment -->
+                       <td><input type="submit" value="Sign in"></td>
+                   </tr>
+            </table>
+        </form>
+    </body>
+</html>
